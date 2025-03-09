@@ -1,6 +1,6 @@
 local Luxtl = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Luxware-UI-Library/main/Source.lua"))()
 
-local Luxt = Luxtl.CreateWindow("Trendy.Tapped V3.1", 5143056985)
+local Luxt = Luxtl.CreateWindow("Zied.GetTapped", 5143056985)
 
 local creditsTab = Luxt:Tab("🛠️ Credits", 11767037107)
 local cf = creditsTab:Section("🛠️ Main Credits")
