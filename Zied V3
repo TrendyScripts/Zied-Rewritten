@@ -1,0 +1,124 @@
+local Luxtl = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Luxware-UI-Library/main/Source.lua"))()
+
+local Luxt = Luxtl.CreateWindow("Trendy.Tapped V3.1", 5143056985)
+
+local creditsTab = Luxt:Tab("🛠️ Credits", 11767037107)
+local cf = creditsTab:Section("🛠️ Main Credits")
+cf:Credit("🛠️ Trendy: Main Credits")
+local cf1 = creditsTab:Section("UI Credits")
+cf1:Credit("🛠️ xHeptc: UI Library")
+local cf2 = creditsTab:Section("🛠️ Owner Credits")
+cf2:Credit("🛠️ Trendy: Owner")
+
+local Examples = Luxt:Tab("Main", 11767037107)
+local ff = Examples:Section("Main")
+ff:Label("Welcome to Main")
+
+ff:Button("Camlock", function()
+    print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Lock"))(); 
+end)
+
+ff:Button("Auto Air", function()
+    print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Auto%20Air"))(); 
+end)
+
+local Examples = Luxt:Tab("Visuals", 11767037107)
+local ff = Examples:Section("Visuals")
+ff:Label("Welcome to Visuals")
+
+ff:Button("Esp (Permanent)", function()
+    print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Esp"))(); 
+end)
+
+local Examples = Luxt:Tab("Player", 11767037107)
+local ff = Examples:Section("Player")
+ff:Label("Welcome to Player")
+
+ff:Button("Speed Macro", function()
+    print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Macro"))(); 
+end)
+
+local Examples = Luxt:Tab("Useful Scripts", 11767037107)
+local ff = Examples:Section("Keyboard Scripts")
+ff:Label("Welcome to Keyboard Scripts")
+
+ff:Button("Keyboard Buttons", function()
+    print("Clicked!")
+loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
+end)
+
+ff:Button("Delta Keyboard", function()
+    print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+end)
+
+local ff = Examples:Section("Target Player Scripts")
+ff:Label("Welcome to Target Player Scripts")
+ff:Button("Victim Menu", function()
+    print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DH-VictimMenu-Script/main/Dh%20VictimMenu%3A%20Script"))()
+end)
+
+ff:Button("Auto Target Fling", function()
+    print("Clicked!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Fling%20Player'))()
+end)
+
+ff:Button("Fling All", function()
+    print("Clicked!")
+loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))() 
+end)
+
+
+ff:Button("Anti-Fling", function()
+    print("Clicked!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Linux6699/DaHubRevival/main/AntiFling.lua'))()
+end)
+
+ff:Button("Anti-Fling V2", function()
+    print("Clicked!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/TrendyScripts/Da-Hood-Scripts-Shortened/refs/heads/main/Anti-Fling%20V2'))()
+end)
+
+ff:Button("Anti-Fling V3", function()
+    print("Clicked!")
+loadstring(game:HttpGet(('https://pastebin.com/raw/GxdesRQx'),true))()
+end)
+
+ff:Button("Mouse Fling", function()
+    print("Clicked!")
+loadstring(game:HttpGet(('https://pastefy.ga/xBdd9GId/raw'),true))()
+end)
+
+local ff = Examples:Section("Quick Rejoin Script")
+ff:Label("Welcome to Quick Rejoin Script")
+ff:Button("Quick Rejoin", function()
+    print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jelly-plays/Rejoin-script/main/obf_L744By559M18BbuseSG6en8r1zL31daK9060LV7WyvmS4bQp92aONWfwRE36FdcZ.lua.txt"))();
+end)
+
+local Examples = Luxt:Tab("Examples", 11767037107)
+local ff = Examples:Section("All Examples")
+ff:Label("Welcome to Wisteria GUI")
+ff:Button("TextButton Text", function()
+    print("Clicked!")
+end)
+ff:Toggle("Toggle Me!", function(isToggled)
+    print(isToggled) -- prints true or false
+end)
+ff:KeyBind("Print('Hey') on bind", Enum.KeyCode.R, function() --Enum.KeyCode.R is starting Key
+    print('Hey')
+end)
+ff:TextBox("TextBox Info", "Epic PlaceHolder", function(getText)
+    print(getText) -- Prints whatever player types
+end)
+ff:Slider("WalkSpeed", 16, 503, function(currentValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = currentValue 
+end)
+ff:DropDown("Favorite Food?", {"Pizza", "Burger", "Sandwiches"}, function(food) -- food is chosen item
+    print(food)
+end)
