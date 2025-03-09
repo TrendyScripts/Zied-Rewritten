@@ -3,9 +3,9 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Zied Rewritten - Mobile/Pc",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Rayfield Interface Suite",
+   LoadingTitle = "Zied Rewritten Loading…",
    LoadingSubtitle = "by Zied",
-   Theme = "Serenity", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -18,18 +18,56 @@ local Window = Rayfield:CreateWindow({
 
    Discord = {
       Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
-      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      Invite = "https://discord.gg/qfmypbZjb5", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = false, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Untitled",
+      Title = "Zied Rewritten",
       Subtitle = "Key System",
-      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      Note = "The key updates once a week on sunday when you type the key in you won’t have to do again until the key changes the key you type in will be saved.", -- Use this to tell the user how to get a key
       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      Key = {"Hello2025!!"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
+
+local Tab = Window:CreateTab("Main", 11767037107) -- Title, Image
+local Section = Tab:CreateSection("Lock")
+local Button = Tab:CreateButton({
+   Name = "Camlock",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Lock"))(); 
+   end,
+})
+
+local Section = Tab:CreateSection("Auto Air")
+local Button = Tab:CreateButton({
+   Name = "Auto Air",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Auto%20Air"))(); 
+   end,
+})
+
+
+local Tab = Window:CreateTab("Visuals", 11767037107) -- Title, Image
+local Section = Tab:CreateSection("Esp (Permanent)")
+local Button = Tab:CreateButton({
+   Name = "Esp (Permanent)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Esp"))(); 
+   end,
+})
+
+local Tab = Window:CreateTab("Player", 11767037107) -- Title, Image
+local Section = Tab:CreateSection("Macro")
+local Button = Tab:CreateButton({
+   Name = "Speed Macro",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Macro"))(); 
+   end,
+})
+
+local Tab = Window:CreateTab("Target", 11767037107) -- Title, Image
