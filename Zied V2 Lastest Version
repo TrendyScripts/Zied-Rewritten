@@ -4,32 +4,48 @@ local window = DrRayLibrary:Load("Main", "Default")
 
 local tab = DrRayLibrary.newTab("Aiming", "11767037107")
 
-tab.newButton("Camlock Toggle", "Prints Hello!", function()
-    print('Hello!')
+tab.newToggle("Camlock", "Toggle! (Click Once!)", true, function(toggleState)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Lock"))()
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
 end)
 
-tab.newButton("Auto Air Toggle", "Prints Hello!", function()
-    print('Hello!')
+tab.newToggle("Auto Air", "Toggle! (Click Once!)", true, function(toggleState)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Auto%20Air"))()
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
 end)
 
 local tab = DrRayLibrary.newTab("Visuals", "11767037107")
-tab.newButton("ESP Toggle", "Prints Hello!", function()
-    print('Hello!')
+tab.newToggle("Permanent ESP", "Toggle! (Click Once!)", true, function(toggleState)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Esp"))()
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
 end)
 
 local tab = DrRayLibrary.newTab("Self", "11767037107")
 
-tab.newButton("Legit Macro Toggle", "Prints Hello!", function()
-    print('Hello!')
+tab.newToggle("Legit Macro Toggle", "Toggle! (Click Once!)", true, function(toggleState)
 loadstring(game:HttpGet("https://pastebin.com/raw/TG4SNEQs"))()
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
 end)
 
 local tab = DrRayLibrary.newTab("Target", "11767037107")
 
-local tab = DrRayLibrary.newTab("Trendy Was Here!!", "11767037107")
+local tab = DrRayLibrary.newTab("More", "11767037107")
 
 tab.newButton("Button", "Prints Hello!", function()
     print('Hello!')
