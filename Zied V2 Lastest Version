@@ -22,6 +22,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3
     end
 end)
 
+tab.newToggle("Anti-Lock Resolver", "Toggle! (Click Once!)", true, function(toggleState)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FeliciaXxxTop/FuckRoblox/main/ResolverV1.lua"))()
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
 local tab = DrRayLibrary.newTab("Visuals", "11767037107")
 tab.newToggle("Permanent ESP", "Toggle! (Click Once!)", true, function(toggleState)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Esp"))()
@@ -45,12 +54,26 @@ end)
 
 local tab = DrRayLibrary.newTab("Target", "11767037107")
 
-local tab = DrRayLibrary.newTab("More", "11767037107")
-
-tab.newButton("Button", "Prints Hello!", function()
-    print('Hello!')
+tab.newToggle("Fling Gui V1", "Toggle! (Click Once!)", true, function(toggleState)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DH-VictimMenu-Script/main/Dh%20VictimMenu%3A%20Script"))()
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
 end)
 
+tab.newToggle("Fling Gui V2", "Toggle! (Click Once!)", true, function(toggleState)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Fling%20Player'))()
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+
+local tab = DrRayLibrary.newTab("More", "11767037107")
 
 window:Toggle()
 window:Open()
@@ -63,7 +86,3 @@ local mainColor = Color3.fromRGB(10, 30, 10) -- Customize as you wish; these are
 local secondColor = Color3.fromRGB(50, 50, 10) -- Secondary Color; applies to Toggle when activated and slider background.
 
 window:SetTheme(mainColor, secondColor)
-
-
-
-
