@@ -5,7 +5,7 @@ local window = DrRayLibrary:Load("Main", "Default")
 local tab = DrRayLibrary.newTab("Aiming", "11767037107")
 
 tab.newToggle("Camlock", "Toggle! (Click Once!)", true, function(toggleState)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Lock"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V2%20Lock"))()
     if toggleState then
         print("On")
     else
@@ -14,7 +14,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3
 end)
 
 tab.newToggle("Auto Air", "Toggle! (Click Once!)", true, function(toggleState)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Auto%20Air"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V2%20Auto-Air"))()
     if toggleState then
         print("On")
     else
@@ -33,7 +33,7 @@ end)
 
 local tab = DrRayLibrary.newTab("Visuals", "11767037107")
 tab.newToggle("Permanent ESP", "Toggle! (Click Once!)", true, function(toggleState)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V3%20Esp"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V2%20Esp"))()
     if toggleState then
         print("On")
     else
@@ -55,7 +55,7 @@ end)
 local tab = DrRayLibrary.newTab("Target", "11767037107")
 
 tab.newToggle("Fling Gui V1", "Toggle! (Click Once!)", true, function(toggleState)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DH-VictimMenu-Script/main/Dh%20VictimMenu%3A%20Script"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrendyScripts/Zied-V3-Scripts/refs/heads/main/Zied%20V2%20Macro"))()
     if toggleState then
         print("On")
     else
